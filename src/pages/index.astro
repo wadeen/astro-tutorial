@@ -1,11 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+
+const pageTitle = "Home Page";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main>
-    <h1>My Astro Site</h1>
+<main>
+  <Layout title="Welcome to Astro.">
+    <h1>{pageTitle}</h1>
     <p class="instructions">
       To get started, open the directory <code>src/pages</code> in your project.<br />
       <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
@@ -17,8 +19,8 @@ import Card from "../components/Card.astro";
       <Card href="https://astro.build/chat/" title="Community" body="Come say hi to our amazing Discord community. ❤️" />
     </ul>
     <a href="about.html">About</a>
-  </main>
-</Layout>
+  </Layout>
+</main>
 
 <style>
   main {
